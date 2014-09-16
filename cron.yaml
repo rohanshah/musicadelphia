@@ -1,4 +1,4 @@
 cron:
 - description: run the scraper ever 30 minutes
-- url: /scrape
-- schedule: every 30 minutes
+  url: /scrape
+  schedule: every 30 minutes
