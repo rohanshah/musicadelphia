@@ -1,4 +1,5 @@
 import webapp2
+import subprocess
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
@@ -12,7 +13,12 @@ class Events(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'application/json'
         self.response.write(json)
 
+class Scraper(webapp2.RequestHandler):
+    def get(self):
+        subprocess.Popen(['./scraper.py'])
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/events', Events)
+    ('/scrape', Scraper)
 ], debug=True)

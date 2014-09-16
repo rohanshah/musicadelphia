@@ -1,8 +1,8 @@
 #! /usr/bin/env python
-from UnionTransferScraper import UnionTransferScraper
-from MilkBoyScraper import MilkBoyScraper
-from BootAndSaddleScraper import BootAndSaddleScraper
-from ElectricFactoryScraper import ElectricFactoryScraper
+from scrapers.UnionTransferScraper import UnionTransferScraper
+from scrapers.MilkBoyScraper import MilkBoyScraper
+from scrapers.BootAndSaddleScraper import BootAndSaddleScraper
+from scrapers.ElectricFactoryScraper import ElectricFactoryScraper
 import json
 
 unionTransfer = UnionTransferScraper()
