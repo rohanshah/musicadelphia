@@ -6,7 +6,7 @@ musicApp.controller('MusicCtrl', function ($scope, $http) {
 	$scope.venues = [ "Union Transfer", "Milkboy", "Electric Factory"
 					, "Boot & Saddle"];
 
-	$scope.venueFilter ={};
+	$scope.venueFilter = {};
 	for (venue in $scope.venues) {
 		$scope.venueFilter[$scope.venues[venue]] = true;
 	}
