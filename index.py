@@ -19,6 +19,6 @@ class Scraper(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/events', Events)
+    ('/events', Events),
     ('/scrape', Scraper)
 ], debug=True)
